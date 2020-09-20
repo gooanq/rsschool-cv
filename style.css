@@ -29,3 +29,15 @@ section{
 .name-section{
 	text-align:center;
 }
+
+a{
+	text-decoration:none;
+}
+
+li{
+	margin-bottom: 1rem;
+}
+
+pre{
+	background-color: rgb(242, 242, 242);
+}
