@@ -84,3 +84,13 @@ private void CreateField()
 
 I got some experience in programming by doing labs and course project at the university. [Here my last](https://github.com/gooanq/Game15) I am searching for new experience in web-developing now.
 
+
+## Education
+
+I have secondary education and now i am studying at the university on fourth course. My specialty is Program Engineering.
+
+
+## English
+
+I used to learn English at school. I was taking English courses
+for one year in the high school too. According to online tests my English level now is B1. I haven't practiced my English for a long time but now I am trying to fill my gap by taking exercises on Puzzle-English watching movies and read programming tutorials on english.
