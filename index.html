@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="content">
+		<h1>rsschool-cv</h1>
+		<section class="name-section">
+			<img class="photo" src="https://pbs.twimg.com/profile_images/465796449645912064/qCdqAoSh.jpeg" alt="photo">
+			<h2>Ivan Guzikov</h2>
+		</section>
+		<section>
+			<h2>My contacts</h2>
+			<ul>
+				<li><a href="#">telegram</a></li>
+				<li><a href="#">E-mail</a></li>
+				<li><a href="#">GitHub</a></li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Summary</h2>
+			<p>
+				I am interested in programming. I have been studing in for four years at the university. Now I want to begin
+				serious studing of web technologies and become web developer. I have some basic knowledge and i hope it will
+				help
+				me to reach my goal.
+			</p>
+		</section>
+
+		<section>
+			<h2>Skills</h2>
+			<p>During my studies at the university i got some skills at:</p>
+			<ul>
+				<li>C# and WinForms</li>
+				<li>C++</li>
+				<li>OOP</li>
+				<li>SQL(postgreSQL and MySQL)</li>
+			</ul>
+			<p>Also have basic skills at:</p>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript and TypeScript</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Code example</h2>
+			<p>My latest university project: Game in 15</p>
+			<pre>
+private void CreateField()
+{
+            Random rand = new Random();
+            playField = new NumberBox[HORIZONTAL, VERTICAL];
+            Size size = new Size(BOXSIZE, BOXSIZE);
+            List<int> numbers = new List<int>();
+            for (int i = 0; i < EMPTY; i++)
+                numbers.Add(i);
+
+            int xStart = 10;
+            int yStart = 10;
+            int space = 10;
+            int x = xStart, y = yStart;
+
+            for (int i = 0; i < VERTICAL; i++)
+            {
+                for (int j = 0; j < HORIZONTAL; j++)
+                {
+                    int number = rand.Next(0, numbers.Count);
+                    int value = numbers[number] + 1;
+                    var numberBox = new NumberBox(i, j, value, size);
+                    numbers.RemoveAt(number);
+                    numberBox.Location = new Point(x, y);
+
+
+                    this.Controls.Add(numberBox);
+                    playField[i, j] = numberBox;
+                    numberBox.Show();
+                    x = x + space + BOXSIZE;
+
+                    if (value == EMPTY) continue;
+
+
+                    numberBox.Click += (sender, e) =>
+                    {
+                        if (chosen != null)
+                            chosen.BackColor = Color.GreenYellow;
+                        numberBox.BackColor = Color.Orange;
+                        chosen = numberBox;
+                    };
+
+                }
+                x = xStart;
+                y = y + BOXSIZE + space;
+            }
+
+            timer.Start();
+}</pre>
+		</section>
+
+		<section>
+			<h2>Experience</h2>
+			<p>
+				I got some experience in programming by doing labs 
+				and course project at the university. <a href="https://github.com/gooanq/Game15">Here my last</a>. I am searching for new experience in web-developing now.
+			</p>
+		</section>
+
+		<section>
+			<h2>Education</h2>
+			<p>
+				I have secondary education and now i am studying at the university on fourth course. My specialty is Program Engineering.
+			</p>
+		</section>
+
+		<section>
+			<h2>English</h2>
+			<p>
+				I used to learn English at school. I was taking English courses for one year in the high school too.
+				According to online tests my English level now is B1. I haven’t practiced my English for a long time but now I 
+				am trying to fill my gap by taking exercises on Puzzle-English watching movies and read programming tutorials on english.
+			</p>
+		</section>
+	</div>
+</body>
+
+</html>
